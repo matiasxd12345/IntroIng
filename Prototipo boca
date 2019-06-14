@@ -1,0 +1,10 @@
+pin = machine.Pin(2, machine.Pin.OUT)
+pwm = machine.PWM(pin)
+pwm.freq(50)
+while True:
+  pwm.duty(30)
+  time.sleep(1)
+  pwm.duty(77)
+  time.sleep(1)
+  pwm.duty(122)
+  time.sleep(1)
